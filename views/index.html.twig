@@ -36,25 +36,25 @@
                     <form action='/view_result'>
                         <div class='form-group'>
                             <label for="player_one">Player One</label><br>
-                            <input name="player_one" id="player_one" value="0" type="radio" required>Rock<br>
-                            <input name="player_one" id="player_one" value="1" type="radio">Paper<br>
-                            <input name="player_one" id="player_one" value="2" type="radio">Scissors<br>
+                            <input name="player_one" id="player_one1" value="0" type="radio" required><label for="player_one1">Rock</label><br>
+                            <input name="player_one" id="player_one2" value="1" type="radio"><label for="player_one2">Paper</label><br>
+                            <input name="player_one" id="player_one3" value="2" type="radio"><label for="player_one3">Scissors</label><br>
                         </div>
                     </div>
                     <div class="col-xs-6 right">
                         <div class='form-group'>
                             <label for="player_two">Player Two</label><br>
-                            <input name="player_two" id="player_two" value="3" type="radio">Rock<br>
-                            <input name="player_two" id="player_two" value="6" type="radio">Paper<br>
-                            <input name="player_two" id="player_two" value="9" type="radio">Scissors<br>
+                            <input name="player_two" id="player_two1" value="3" type="radio"><label for="player_two1">Rock</label><br>
+                            <input name="player_two" id="player_two2" value="6" type="radio"><label for="player_two2">Paper</label><br>
+                            <input name="player_two" id="player_two3" value="9" type="radio"><label for="player_two3">Scissors</label><br>
                             <p class="toggle"><input name="player_two" id="player_two" value="99" type="radio" checked="checked"></p>
                         </div>
                     </div>
                 </div>
                 <div class="row submit_button">
-                        <button type="submit">Submit</button>
+                        <button class="btn btn-default" type="submit">Submit</button>
                     </form>
-                    <button id="hide" onclick="changeVal(this.player_two)">1 or 2 Player</button>
+                    <button class="btn btn-default" id="hide">1 or 2 Player</button>
                 </div>
                 <script>
                     $('#hide').click(function() {
