@@ -1,11 +1,25 @@
 <html>
     <head>
         <title>Result</title>
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     </head>
     <body>
-        <h1> {{ result }} </h1>
-        <br><br>
-        <a href="/">Play Again</a>
+        <div class="row">
+            <h1> {{ result }} </h1>
+            <br>
+            <br>
+            {% if result == "Tie!" %}
+                                hi  tie   - <br>
+            {% endif %}
+
+            {% if result == "Player 1 Wins!" %}
+                                hi 1<br>
+            {% endif %}
+
+            {% if result == "Player 2 Wins!" %}
+                                hi 2<br>
+            {% endif %}
+            <a class="btn btn-default" href="/" role="button">Play Again</a>
+        </div>
     </body>
 </html>
