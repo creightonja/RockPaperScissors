@@ -2,6 +2,7 @@
     <head>
         <title>Rock, Paper, Scissors Game</title>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <style>
         body {
             background: #e2e2e2;
@@ -22,6 +23,9 @@
         .left{
             padding-left: 20%;
         }
+        .toggle{
+            display: none;
+        }
         </style>
     </head>
     <body>
@@ -32,7 +36,7 @@
                     <form action='/view_result'>
                         <div class='form-group'>
                             <label for="player_one">Player One</label><br>
-                            <input name="player_one" id="player_one" value="0" type="radio">Rock<br>
+                            <input name="player_one" id="player_one" value="0" type="radio" required>Rock<br>
                             <input name="player_one" id="player_one" value="1" type="radio">Paper<br>
                             <input name="player_one" id="player_one" value="2" type="radio">Scissors<br>
                         </div>
@@ -43,13 +47,20 @@
                             <input name="player_two" id="player_two" value="3" type="radio">Rock<br>
                             <input name="player_two" id="player_two" value="6" type="radio">Paper<br>
                             <input name="player_two" id="player_two" value="9" type="radio">Scissors<br>
+                            <p class="toggle"><input name="player_two" id="player_two" value="99" type="radio" checked="checked"></p>
                         </div>
                     </div>
                 </div>
                 <div class="row submit_button">
                         <button type="submit">Submit</button>
                     </form>
+                    <button id="hide" onclick="changeVal(this.player_two)">1 or 2 Player</button>
                 </div>
+                <script>
+                    $('#hide').click(function() {
+                        $('.right').toggleClass('toggle');
+                    });
+                </script>
         </div>
     </body>
 </html>

@@ -8,7 +8,6 @@
             $outcome_array = [3,3,3,0,1,2,2,0,1,1,2,0];  //Setting match winner index number into array
             $result_array = ["Tie!", "Player 1 Wins!", "Player 2 Wins!"];  //Setting
             return $result_array[$outcome_array[$rps_sum]];
-
         }
 
         function randomNumber() {

@@ -24,7 +24,11 @@
     //retrieving user inputs, setting instance, using makeRPS method, then posting result
     $app->get("/view_result", function() use ($app) {
         $rps = new RPSGenerator;
-        $rps_result = $rps->makeRPS($_GET['player_one'], $_GET['player_two']);
+        $input2 = $_GET['player_two'];
+        if ($input2 == 99) {
+            $input2 = $rps->randomNumber();
+        }
+        $rps_result = $rps->makeRPS($_GET['player_one'], $input2);
         return $app['twig']->render('result.html.twig', array ('result' => $rps_result));
     });
 

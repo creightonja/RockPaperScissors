@@ -8,8 +8,8 @@
 
 ## Description
 
-Two player game of rock, paper, scissors.  This app gets the user input and returns
-a winner or tie.
+One or two player game of rock, paper, scissors.  This app gets the user input
+and returns a winner or a tie.
 
 ## Setup
 
@@ -21,7 +21,7 @@ a winner or tie.
 
 ## Technologies Used
 
-PHP, phpunit, Silex, Twig, HTML, CSS, Boostrap, Symfony
+PHP, phpunit, Silex, Twig, HTML, CSS, Boostrap, Symfony, jQuery
 
 ### Legal
 

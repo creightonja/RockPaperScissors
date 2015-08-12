@@ -100,7 +100,6 @@
         }
 
 
-
         //Test7 user 1 = rock, user 2 = paper, result user 2 wins
         function test_RPSGenerator_rockPaper() {
             //Arrange
@@ -114,8 +113,6 @@
             //Assert
             $this->assertEquals("Player 2 Wins!", $result);
         }
-
-
 
 
         //Test8 user 1 = paper, user 2 = scissors, result user 2 wins
