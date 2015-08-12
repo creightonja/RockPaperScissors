@@ -2,27 +2,54 @@
     <head>
         <title>Rock, Paper, Scissors Game</title>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <style>
+        body {
+            background: #e2e2e2;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background: darkgrey;
+        }
+        .submit_button {
+            text-align: center;
+        }
+
+        .right{
+            padding-left: 20%;
+        }
+        .left{
+            padding-left: 20%;
+        }
+        </style>
     </head>
     <body>
         <div class="container">
             <h1>Rock, Paper, Scissors</h1>
-            <form action='/view_result'>
-                <div class='form-group'>
-                    <label for="player_one">Player One</label><br>
-                    <input name="player_one" id="player_one" value="0" type="radio">Rock<br>
-                    <input name="player_one" id="player_one" value="1" type="radio">Paper<br>
-                    <input name="player_one" id="player_one" value="2" type="radio">Scissors<br>
+            <div class="row">
+                <div class="col-xs-6 left">
+                    <form action='/view_result'>
+                        <div class='form-group'>
+                            <label for="player_one">Player One</label><br>
+                            <input name="player_one" id="player_one" value="0" type="radio">Rock<br>
+                            <input name="player_one" id="player_one" value="1" type="radio">Paper<br>
+                            <input name="player_one" id="player_one" value="2" type="radio">Scissors<br>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 right">
+                        <div class='form-group'>
+                            <label for="player_two">Player Two</label><br>
+                            <input name="player_two" id="player_two" value="3" type="radio">Rock<br>
+                            <input name="player_two" id="player_two" value="6" type="radio">Paper<br>
+                            <input name="player_two" id="player_two" value="9" type="radio">Scissors<br>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <div class='form-group'>
-                    <label for="player_two">Player Two</label><br>
-                    <input name="player_two" id="player_two" value="3" type="radio">Rock<br>
-                    <input name="player_two" id="player_two" value="6" type="radio">Paper<br>
-                    <input name="player_two" id="player_two" value="9" type="radio">Scissors<br>
+                <div class="row submit_button">
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
-                <button type="submit">Submit</button>
-
-            </form>
         </div>
     </body>
 </html>

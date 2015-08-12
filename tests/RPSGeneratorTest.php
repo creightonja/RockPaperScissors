@@ -1,5 +1,5 @@
 <?php
-    //calling rock paper scissor generator class and methods
+    //calling rock paper scissor generator class and methodsQ   SA
     require_once "src/RPSGenerator.php";
 
     class RPSGeneratorTest extends PHPUnit_Framework_TestCase {
