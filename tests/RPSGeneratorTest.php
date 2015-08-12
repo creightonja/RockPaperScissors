@@ -149,6 +149,32 @@
             $this->assertEquals("Player 2 Wins!", $result);
         }
 
+        //Test10 random number
+        function test_RPSGenerator_numberGenerator() {
+            //Arrange
+            $test_RPSGenerator = new RPSGenerator;
+
+            //Act
+            $result = $test_RPSGenerator->randomNumber();
+
+            //Assert
+            $this->assertEquals(3 || 6 || 9, $result);
+        }
+
+        //Test11 random number
+        function test_RPSGenerator_computerAsPlayerTwo() {
+            //Arrange
+            $test_RPSGenerator = new RPSGenerator;
+            $input1 = 2; //value of player 1's rock
+            $input2 = $test_RPSGenerator->randomNumber(); //random number 3, 6, or 9
+            $possible_answers = array("Tie!", "Player 1 Wins!", "Player 2 Wins!");
+
+            //Act
+            $result = $test_RPSGenerator->makeRPS($input1, $input2);
+
+            //Assert
+            $this->assertContains($result, $possible_answers);
+        }
 
 
 

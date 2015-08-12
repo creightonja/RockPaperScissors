@@ -10,6 +10,10 @@
             return $result_array[$outcome_array[$rps_sum]];
 
         }
+
+        function randomNumber() {
+            return (3* (rand(1, 3)));
+        }
     }
 
 ?>
